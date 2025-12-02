@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In / Sign Up - FastBite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Fast<span>Bite</span></div>
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="auth.html" class="nav-link nav-link-accent active">Sign In</a>
+        <a href="cart.html" class="cart-pill" aria-label="Cart">
+          <span class="cart-icon"></span>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Welcome back</h1>
+      <p>Sign in to track your orders, save your favorites, and get faster checkout.</p>
+    </section>
+
+    <section class="section">
+      <div class="auth-layout">
+        <div class="auth-card">
+          <div class="auth-tabs">
+            <button class="auth-tab active" data-auth-tab="signin">Sign In</button>
+            <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+          </div>
+
+          <!-- Sign In -->
+          <form class="auth-form" id="signin-form" data-auth-panel="signin">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" placeholder="Enter your password" required minlength="6" />
+            </label>
+            <div class="auth-row">
+              <label class="auth-remember">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="auth-link">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn-primary auth-btn">Sign In</button>
+          </form>
+
+          <!-- Sign Up -->
+          <form class="auth-form hidden" id="signup-form" data-auth-panel="signup">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" placeholder="Create a password" required minlength="6" />
+            </label>
+            <label>
+              Confirm Password
+              <input type="password" name="confirmPassword" placeholder="Repeat your password" required minlength="6" />
+            </label>
+            <button type="submit" class="btn-primary auth-btn">Create Account</button>
+          </form>
+        </div>
+
+        <div class="auth-side">
+          <img src="https://images.pexels.com/photos/3762069/pexels-photo-3762069.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Food delivery illustration" />
+          <p>Save your favorite meals, reorder in one tap, and get exclusive discounts when you create an account.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Fast<span>Bite</span></div>
+        <p>Your favorite meals delivered fast, hot, and fresh.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="tel:+918767997008">+91 8767997008</a>
+          <a href="mailto:support@fastbite.com">support@fastbite.com</a>
+          <span>Mon – Sun: 9AM – 5PM</span>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram logo" />
+            Instagram
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo" />
+            Facebook
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter logo" />
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 FastBite. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="auth-toast">Signed in successfully (demo only).</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - FastBite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Fast<span>Bite</span></div>
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="auth.html" class="nav-link nav-link-accent">Sign In</a>
+        <a href="cart.html" class="cart-pill" aria-label="Cart">
+          <span class="cart-icon"></span>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>Questions, feedback, or partnership ideas? We would love to hear from you.</p>
+    </section>
+
+    <section class="section">
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>Support</h3>
+          <p>Email: support@fastbite.com</p>
+          <p>Phone: +91 8767997008</p>
+          <h3>Head Office</h3>
+          <p>123 Delivery Avenue</p>
+          <p>Food Dondiacha, FC 10010</p>
+          <p>Dondiacha, FC 10010</p>
+          <h3>Working Hours</h3>
+          <p>Mon – Sun: 9AM – 5PM</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h3>Send us a message</h3>
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="What is this about?" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+          </label>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Fast<span>Bite</span></div>
+        <p>Your favorite meals delivered fast, hot, and fresh.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="tel:8767997008">+91 8767997008</a>
+          <a href="mailto:support@fastbite.com">support@fastbite.com</a>
+          <span>Mon – Sun: 9AM – 5PM</span>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram logo" />
+            Instagram
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo" />
+            Facebook
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter logo" />
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 FastBite. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast">Thank you! Your message has been received.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - FastBite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Fast<span>Bite</span></div>
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="auth.html" class="nav-link nav-link-accent">Sign In</a>
+        <a href="cart.html" class="cart-pill" aria-label="Cart">
+          <span class="cart-icon"></span>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Our Menu</h1>
+      <p>Browse our most popular dishes and filter by category.</p>
+    </section>
+
+    <section class="section">
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pizza">Pizza</button>
+        <button class="filter-btn" data-filter="burger">Burgers</button>
+        <button class="filter-btn" data-filter="asian">Asian</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+      </div>
+
+      <div class="grid menu-grid" id="menu-grid">
+        <article class="card menu-item" data-category="pizza">
+          <img src="https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=900&q=80" alt="Margherita Pizza" />
+          <h3>Margherita Pizza</h3>
+          <p>Classic tomato, mozzarella, and basil on thin crust.</p>
+          <div class="card-actions">
+            <span class="price">₹400</span>
+            <button class="add-to-cart" data-name="Margherita Pizza" data-price="400">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Veg</span>
+            <span class="tag">Best Seller</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="pizza">
+          <img src="https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=800" alt="BBQ Chicken Pizza" />
+          <h3>BBQ Chicken Pizza</h3>
+          <p>Grilled chicken, red onions, and smoky BBQ sauce.</p>
+          <div class="card-actions">
+            <span class="price">₹200</span>
+            <button class="add-to-cart" data-name="BBQ Chicken Pizza" data-price="200">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Spicy</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="burger">
+          <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Classic Cheeseburger" />
+          <h3>Classic Cheeseburger</h3>
+          <p>Beef patty, cheddar cheese, lettuce, and tomato.</p>
+          <div class="card-actions">
+            <span class="price">₹350</span>
+            <button class="add-to-cart" data-name="Classic Cheeseburger" data-price="350">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Popular</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="burger">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Grilled Veggie Burger" />
+          <h3>Grilled Veggie Burger</h3>
+          <p>Plant-based patty with grilled veggies and avocado.</p>
+          <div class="card-actions">
+            <span class="price">₹600</span>
+            <button class="add-to-cart" data-name="Grilled Veggie Burger" data-price="600">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Veg</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="asian">
+          <img src="https://images.pexels.com/photos/7538065/pexels-photo-7538065.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ramen Bowl" />
+          <h3>Spicy Ramen Bowl</h3>
+          <p>Rich broth with noodles, egg, and seasonal toppings.</p>
+          <div class="card-actions">
+            <span class="price">₹850</span>
+            <button class="add-to-cart" data-name="Spicy Ramen Bowl" data-price="850">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Spicy</span>
+            <span class="tag">New</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="asian">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Mixed Sushi Platter" />
+          <h3>Mixed Sushi Platter</h3>
+          <p>Selection of salmon, tuna, and veggie rolls.</p>
+          <div class="card-actions">
+            <span class="price">₹1300</span>
+            <button class="add-to-cart" data-name="Mixed Sushi Platter" data-price="1300">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Share</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate Lava Cake" width="900" height="600" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600?text=Food+Image'" />
+          <h3>Chocolate Lava Cake</h3>
+          <p>Warm chocolate cake with a molten center.</p>
+          <div class="card-actions">
+            <span class="price">₹500</span>
+            <button class="add-to-cart" data-name="Chocolate Lava Cake" data-price="500">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Dessert</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="dessert">
+          <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ice Cream Sundae" />
+          <h3>Classic Ice Cream Sundae</h3>
+          <p>Vanilla ice cream with chocolate sauce and nuts.</p>
+          <div class="card-actions">
+            <span class="price">₹200</span>
+            <button class="add-to-cart" data-name="Classic Ice Cream Sundae" data-price="200">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Kids</span>
+          </div>
+        </article>
+
+        <!-- Extra pizza items -->
+        <article class="card menu-item" data-category="pizza">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Four Cheese Pizza" />
+          <h3>Four Cheese Pizza</h3>
+          <p>Blend of mozzarella, parmesan, cheddar, and gouda on a crispy crust.</p>
+          <div class="card-actions">
+            <span class="price">₹760</span>
+            <button class="add-to-cart" data-name="Four Cheese Pizza" data-price="760">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Cheesy</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="pizza">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Veggie Delight Pizza" />
+          <h3>Veggie Delight Pizza</h3>
+          <p>Loaded with bell peppers, olives, onions, and sweet corn.</p>
+          <div class="card-actions">
+            <span class="price">₹899</span>
+            <button class="add-to-cart" data-name="Veggie Delight Pizza" data-price="899">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Veg</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="pizza">
+          <img src="https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Spicy Pepperoni Pizza" />
+          <h3>Spicy Pepperoni Pizza</h3>
+          <p>Double pepperoni, jalapeños, and extra cheese.</p>
+          <div class="card-actions">
+            <span class="price">₹999</span>
+            <button class="add-to-cart" data-name="Spicy Pepperoni Pizza" data-price="999">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Spicy</span>
+          </div>
+        </article>
+
+        <!-- Extra burger items -->
+        <article class="card menu-item" data-category="burger">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=80" alt="Crispy Chicken Burger" />
+          <h3>Crispy Chicken Burger</h3>
+          <p>Fried chicken fillet with lettuce, tomato, and mayo.</p>
+          <div class="card-actions">
+            <span class="price">₹599</span>
+            <button class="add-to-cart" data-name="Crispy Chicken Burger" data-price="599">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Crispy</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="burger">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Paneer Tikka Burger" />
+          <h3>Paneer Tikka Burger</h3>
+          <p>Indian-style spiced paneer patty with mint chutney.</p>
+          <div class="card-actions">
+            <span class="price">₹799</span>
+            <button class="add-to-cart" data-name="Paneer Tikka Burger" data-price="799">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Veg</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="burger">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Bacon Cheese Burger" />
+          <h3>Bacon Cheese Burger</h3>
+          <p>Beef burger topped with crispy bacon and cheddar.</p>
+          <div class="card-actions">
+            <span class="price">₹699</span>
+            <button class="add-to-cart" data-name="Bacon Cheese Burger" data-price="699">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Popular</span>
+          </div>
+        </article>
+
+        <!-- Extra Asian items -->
+        <article class="card menu-item" data-category="asian">
+          <img src="https://images.unsplash.com/photo-1546069901-5ec6a79120b0?auto=format&fit=crop&w=900&q=80" alt="Veg Noodles" />
+          <h3>Veg Hakka Noodles</h3>
+          <p>Stir-fried noodles with crunchy vegetables and soy sauce.</p>
+          <div class="card-actions">
+            <span class="price">₹399</span>
+            <button class="add-to-cart" data-name="Veg Hakka Noodles" data-price="399">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Veg</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="asian">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" alt="Chicken Fried Rice" />
+          <h3>Chicken Fried Rice</h3>
+          <p>Wok-tossed rice with egg, chicken, and vegetables.</p>
+          <div class="card-actions">
+            <span class="price">₹750</span>
+            <button class="add-to-cart" data-name="Chicken Fried Rice" data-price="750">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Popular</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="asian">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80" alt="Dumplings" />
+          <h3>Steamed Dumplings</h3>
+          <p>Soft dumplings filled with mixed vegetables and spices.</p>
+          <div class="card-actions">
+            <span class="price">₹299</span>
+            <button class="add-to-cart" data-name="Steamed Dumplings" data-price="299">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Starter</span>
+          </div>
+        </article>
+
+        <!-- Extra dessert items -->
+        <article class="card menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=900&q=80" alt="Strawberry Cheesecake" />
+          <h3>Strawberry Cheesecake</h3>
+          <p>Creamy cheesecake topped with fresh strawberries.</p>
+          <div class="card-actions">
+            <span class="price">₹699</span>
+            <button class="add-to-cart" data-name="Strawberry Cheesecake" data-price="699">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Dessert</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80" alt="Brownie with Ice Cream" width="900" height="600" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600?text=Food+Image'" />
+          <h3>Brownie with Ice Cream</h3>
+          <p>Warm chocolate brownie served with vanilla ice cream.</p>
+          <div class="card-actions">
+            <span class="price">₹599</span>
+            <button class="add-to-cart" data-name="Brownie with Ice Cream" data-price="599">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Popular</span>
+          </div>
+        </article>
+
+        <article class="card menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Fruit Salad" />
+          <h3>Fresh Fruit Bowl</h3>
+          <p>Seasonal fruits served with a drizzle of honey.</p>
+          <div class="card-actions">
+            <span class="price">₹366</span>
+            <button class="add-to-cart" data-name="Fresh Fruit Bowl" data-price="366">Add to Cart</button>
+          </div>
+          <div class="tags">
+            <span class="tag">Light</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Fast<span>Bite</span></div>
+        <p>Your favorite meals delivered fast, hot, and fresh.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="tel:+8767997008">+91 8767997008</a>
+          <a href="mailto:support@fastbite.com">support@fastbite.com</a>
+          <span>Mon – Sun: 9AM – 5PM</span>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram logo" />
+            Instagram
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo" />
+            Facebook
+          </a>
+          <a href="#" class="social-link">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter logo" />
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 FastBite. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="cart-toast">Item added to cart.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
